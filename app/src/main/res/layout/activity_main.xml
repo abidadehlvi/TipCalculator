@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="26dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill"
+        style="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/et_billAmount"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/bill_amount"
+        android:inputType="numberDecimal"
+        style="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tip"
+        style="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/minus"/>
+
+        <TextView
+            android:id="@+id/tv_tip_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_percent"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/percentage"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <Button
+            android:id="@+id/btn_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/plus"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tipAmount"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_amount"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_totalTipAmount"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_dollars"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_totalBill"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_dollars"
+            style="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+
+    </LinearLayout>
